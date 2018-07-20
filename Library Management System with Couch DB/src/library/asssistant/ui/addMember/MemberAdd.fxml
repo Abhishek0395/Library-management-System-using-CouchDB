@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="285.0" prefWidth="555.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.asssistant.ui.addMember.MemberAddController">
+    <stylesheets>
+        <URL value="@memberadd.css" />
+    </stylesheets>
+   <children>
+      <VBox fx:id="vbox" layoutX="10.0" layoutY="10.0" prefHeight="271.0" prefWidth="533.0">
+         <children>
+            <TextField fx:id="name" promptText="Name">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="Id" layoutX="20.0" layoutY="30.0" promptText="Member ID">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="contact" layoutX="10.0" layoutY="55.0" promptText="Contact">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="email" layoutX="20.0" layoutY="120.0" promptText="Email">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="50.0" prefWidth="533.0">
+               <children>
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#addMember" prefHeight="40.0" prefWidth="273.0" text="Save" />
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelBook" prefHeight="41.0" prefWidth="265.0" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
